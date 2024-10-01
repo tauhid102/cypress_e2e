@@ -1,0 +1,15 @@
+# Cypress binary
+cypress/binary/*
+
+# Cypress videos and screenshots (optional)
+cypress/screenshots/*
+cypress/videos/*
+
+# Cypress results and logs
+cypress/results/*
+
+# Ignore Node modules
+node_modules/
+
+# Cypress environment config (if contains sensitive data)
+cypress.env.json
