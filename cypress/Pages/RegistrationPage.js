@@ -1,5 +1,32 @@
 class registerPage{
     weblocators={
-        
+        firstName:"#input-firstname",
+        lastName:"#input-lastname",
+        email:"#input-email",
+        passWord:"#input-password",
+        checkPolicy:"input[value='1'][name='agree']",
+        continue:"button[type='submit']"
+    }
+    openUrl(){
+        cy.visit("https://demo-opencart.com/index.php?route=account/register&language=en-gb")
+    }
+    enterFirstName(FNam){
+        cy.get(this.weblocators.firstName).type(FNam)
+    }
+    enterLastName(LNam){
+        cy.get(this.weblocators.lastName).type(LNam)
+    }
+    enterEmail(email){
+        cy.get(this.weblocators.email).type(email)
+    }
+    enterPassword(password){
+        cy.get(this.weblocators.passWord).type(password)
+    }
+    clickPlicy(){
+        cy.get(this.weblocators.checkPolicy).click()
+    }
+    continue(){
+        cy.get(this.weblocators.continue).click()
     }
 }
+export default registerPage;

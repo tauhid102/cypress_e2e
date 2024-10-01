@@ -6,4 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  env:{
+    url:"https://demo-opencart.com/index.php?route=account/register&language=en-gb"
+  }
 });
